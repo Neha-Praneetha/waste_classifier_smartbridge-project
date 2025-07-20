@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Waste Classifier</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align to top for longer content */
+            min-height: 100vh;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: #fff;
+            text-align: center;
+            padding-top: 50px; /* Add some top padding */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            max-width: 700px;
+            width: 90%;
+            margin-bottom: 30px; /* Space from footer */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: left; /* Align text better for paragraphs */
+        }
+        .navigation {
+            margin-bottom: 30px;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-color: #fff;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>
+            Welcome to the Waste Classification App! Our mission is to empower individuals and communities with an easy-to-use tool for identifying different types of waste. By making waste classification more accessible, we aim to encourage better recycling practices and contribute to a cleaner, more sustainable environment.
+        </p>
+        <p>
+            This application leverages cutting-edge machine learning technology, specifically a TensorFlow model, to accurately classify images of waste into categories such as cardboard, glass, metal, paper, plastic, and trash. Our goal is to simplify the sorting process, reduce landfill waste, and promote the circular economy.
+        </p>
+        <p>
+            We believe that small actions can lead to significant environmental impact. Thank you for being a part of the solution!
+        </p>
+
+        <div class="navigation">
+            <a href="/">Home</a> |
+            <a href="/classify">Get Started</a> |
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Waste Classifier. All rights reserved.</p>
+    </footer>
+</body>
+</html>
