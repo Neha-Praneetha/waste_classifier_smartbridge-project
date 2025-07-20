@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Waste Classifier</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #6dd5ed, #2193b0); /* Beautiful gradient background */
+            color: #fff;
+            text-align: center;
+        }
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.15); /* Slightly transparent white background */
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(5px);
+            max-width: 700px;
+            width: 90%;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-color: #fff;
+        }
+        .get-started-button {
+            display: inline-block;
+            background-color: #28a745; /* Green button */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin-top: 40px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .get-started-button:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to the Waste Classifier App!</h1>
+        <p>
+            This application helps you identify different types of waste, promoting better recycling and environmental management.
+            Click 'Get Started' to upload an image and see its classification.
+        </p>
+
+        <div class="navigation">
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <a href="/classify" class="get-started-button">Get Started</a>
+
+        <footer>
+            <p>&copy; 2025 Waste Classifier. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
